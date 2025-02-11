@@ -1,0 +1,42 @@
+.product {
+  &__photo {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    transform: scale(1);
+
+    @include hover(transform, scale(1.05));
+  }
+
+  &__wrapper {
+    display: grid;
+    gap: 8px;
+  }
+
+  &__title {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: $accent-font-weight;
+    line-height: 25.2px;
+  }
+
+  &__details {
+    display: grid;
+    gap: 12px;
+  }
+
+  &__category {
+    margin: 0;
+    letter-spacing: 0.15px;
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+
+  &__price {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: $accent-font-weight;
+  }
+}
